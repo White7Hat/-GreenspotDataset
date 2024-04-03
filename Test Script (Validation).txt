@@ -1,0 +1,5 @@
+SELECT idProduct, pdescription, item_type, Purchase_Date, Date_sold, vendor_name from
+product inner join purchase on product.idProduct = purchase.product_idProduct
+inner join vendor on vendor.idVendor = purchase.Vendor_idVendor
+inner join sales on sales.Product_idProduct = product.idProduct
+where product.idProduct = 1000;
